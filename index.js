@@ -11,4 +11,12 @@ function firstFourDigits(number) {
     return digits
 }
 
-console.log(firstFourDigits('08076771953'))
+function validateNetwork(num) {
+    if (mtn.includes(firstFourDigits(num))){
+        return 'mtn'
+    }else{
+        return 'glo'
+    }
+}
+
+console.log(validateNetwork('08076771953'))
